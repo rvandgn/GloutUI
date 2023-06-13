@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container-limit {
+    @apply rounded-xl border-[1.8px] border-secondary outline outline-4 outline-primary;
+  }
+  .bg-circle-effect {
+    background: radial-gradient(circle, #1e1e1e 10%, transparent 11%);
+    background-size: 1em 1em;
+    background-color: #121316;
+  }
+  .tooltip {
+    @apply h-min flex justify-center uppercase;
+  }
+  .tooltip > div.tip {
+    @apply hidden;
+  }
+  .tooltip:hover > div.tip {
+    @apply flex items-center text-third border-[1.8px] -bottom-9 border-secondary bg-primary z-10 absolute px-2 py-1 rounded-md text-xs font-medium;
+  }
+}

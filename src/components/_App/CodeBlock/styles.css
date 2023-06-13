@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+  .code-block {
+    @apply text-sm px-1;
+  }
+  .code-block > span {
+    @apply !bg-transparent;
+  }
+  .code-block > span::-webkit-scrollbar {
+    @apply h-1 bg-[#1a1b1f];
+  }
+  .code-block > span::-webkit-scrollbar-thumb {
+    @apply bg-secondary;
+  }
+  .code-block > span > code:nth-of-type(1) {
+    @apply text-third;
+  }
+}

@@ -1,0 +1,13 @@
+@tailwind components;
+
+@layer components {
+    .device-button {
+        @apply h-full border-r-[1.8px] border-secondary flex items-center p-3;
+    }
+    .device-button > svg > path {
+        @apply duration-100 ease-linear;
+    }
+    .device-button:hover > svg path {
+        @apply stroke-[#7e7e7e];
+    }
+}

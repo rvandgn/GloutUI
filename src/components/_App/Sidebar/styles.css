@@ -1,0 +1,10 @@
+@tailwind components;
+
+@layer components {
+    .sidebar {
+        @apply relative h-full bg-primary;
+    }
+    .up-area {
+        @apply w-full h-12 border-b-[1.8px] border-secondary flex items-center gap-2 p-3;
+    }
+}
